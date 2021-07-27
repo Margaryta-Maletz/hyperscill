@@ -1,2 +1,2 @@
 # hyperscill
- https://margaryta-maletz.github.io/hyperscill/
+ https://margaryta-maletz.github.io/hyperscill/src
