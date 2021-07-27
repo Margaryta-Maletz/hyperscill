@@ -1,0 +1,101 @@
+body {
+  background-color: black;
+}
+
+.space {
+  position: relative;
+  background-image: url("space.png");
+  width: 80vw;
+  height: 98vh;
+  margin: auto;
+  overflow: hidden;
+}
+
+.planet {
+  position: absolute;
+  width: 40vw;
+  bottom: -20px;
+  left: 0;
+}
+
+.rocket {
+  position: absolute;
+  width: 10vw;
+  bottom: 18vw;
+  left: 21vw;
+  transform: rotate(30grad);
+/*  transition: bottom 3s ease-out, left 3s ease-in;*/
+}
+
+.control-panel {
+  background: black repeating-linear-gradient(45deg, transparent, transparent 10px, yellow 10px, yellow 20px);
+  padding: 1vw;
+  position: absolute;
+  right: 3vw;
+  bottom: 30vh;
+}
+
+.control-panel__inner {
+  padding: 1vw;
+  gap: 1vw;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  width: 36vw;
+  align-items: center;
+}
+
+.password {
+  background-color: black;
+  color: white;
+  border: 2px solid yellow;
+  border-radius: 10%;
+  min-width: 100px;
+}
+
+.ok {
+  background-color: yellow;
+  color: black;
+  border-radius: 25%;
+}
+
+.check-buttons,
+.levers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.levers {
+  height: 100px;
+}
+
+.levers input {
+  width: 15%;
+  min-height: max-content;
+  flex-basis: 20%;
+  flex-shrink: 1;
+  transform: rotate(-90deg);
+}
+
+.launch {
+  background-color: red;
+  color: yellow;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  line-height: 150%;
+}
+
+.launch:hover {
+  cursor: pointer;
+}
+
+.launch:disabled {
+  background-color: gray;
+  cursor: none;
+}
+
+.launch:active {
+  background-color: brown;
+}
